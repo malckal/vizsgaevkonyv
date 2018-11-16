@@ -2,16 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="627c2ae4-40b7-4165-95a3-7c4eef11d586" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-rest/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/EvkonyvServerApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/StudentController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/StudentService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-share/pom.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/haha" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/Student.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/SchoolClassService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evkonyv-rest/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/evkonyv-rest/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java" beforeDir="false" afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/StudentController.java" beforeDir="false" afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/StudentController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/StudentService.java" beforeDir="false" afterPath="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/StudentService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/evkonyv.iml" beforeDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -62,9 +58,37 @@
         </counts>
       </usages-collector>
     </session>
+    <session id="-1581309442">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.open.time.4" value="1" />
+          <entry key="project.opened" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="java" value="348" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="JAVA" value="348" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="java" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="JAVA" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
   </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
@@ -74,7 +98,7 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/SchoolClass.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="272">
@@ -89,7 +113,7 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/Student.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="289">
+            <state relative-caret-position="204">
               <caret line="17" selection-start-line="17" selection-end-line="17" />
               <folding>
                 <element signature="imports" expanded="true" />
@@ -101,8 +125,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evkonyv-rest/pom.xml">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
-              <caret line="31" selection-start-line="31" selection-end-line="31" />
+            <state relative-caret-position="527">
+              <caret line="37" selection-start-line="37" selection-end-line="37" />
             </state>
           </provider>
         </entry>
@@ -115,19 +139,39 @@
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#273#274#0" expanded="true" />
-                <element signature="e#305#306#0" expanded="true" />
+                <element signature="e#342#343#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="425">
+              <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#662#663#0" expanded="true" />
+                <element signature="e#706#707#0" expanded="true" />
+                <element signature="e#899#900#0" expanded="true" />
+                <element signature="e#942#943#0" expanded="true" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java">
+        <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/SchoolClassService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="102">
-              <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
+            <state relative-caret-position="255">
+              <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
+                <element signature="e#271#272#0" expanded="true" />
+                <element signature="e#298#299#0" expanded="true" />
+                <element signature="e#347#348#0" expanded="true" />
+                <element signature="e#366#367#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -136,12 +180,13 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/StudentController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+            <state relative-caret-position="391">
+              <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#647#648#0" expanded="true" />
-                <element signature="e#683#684#0" expanded="true" />
+                <element signature="e#697#698#0" expanded="true" />
+                <element signature="e#826#827#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -150,11 +195,14 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/StudentService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
+            <state relative-caret-position="272">
+              <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="e#182#183#0" expanded="true" />
                 <element signature="e#209#210#0" expanded="true" />
+                <element signature="e#328#329#0" expanded="true" />
+                <element signature="e#354#355#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -192,6 +240,10 @@
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/Student.java" />
         <option value="$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/SchoolClass.java" />
+        <option value="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/StudentController.java" />
+        <option value="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/StudentService.java" />
+        <option value="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/SchoolClassService.java" />
+        <option value="$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java" />
       </list>
     </option>
   </component>
@@ -239,47 +291,99 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
-              <item name="evkonyv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="evkonyv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
               <item name="evkonyv-rest" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="evkonyv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyv-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyv-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyv-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyv-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyvrest" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyv-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyvrest" type="462c0819:PsiDirectoryNode" />
+              <item name="controller" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyv-rest" type="462c0819:PsiDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="evkonyvrest" type="462c0819:PsiDirectoryNode" />
+              <item name="service" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
               <item name="evkonyv-share" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="evkonyv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
               <item name="evkonyv-share" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="evkonyv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
               <item name="evkonyv-share" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="evkonyv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
               <item name="evkonyv-share" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
-              <item name="evkonyv" type="b2602c69:ProjectViewProjectNode" />
-              <item name="evkonyv" type="462c0819:PsiDirectoryNode" />
+              <item name="vizsgaevkonyv" type="b2602c69:ProjectViewProjectNode" />
+              <item name="vizsgaevkonyv" type="462c0819:PsiDirectoryNode" />
               <item name="evkonyv-share" type="462c0819:PsiDirectoryNode" />
               <item name="src" type="462c0819:PsiDirectoryNode" />
               <item name="main" type="462c0819:PsiDirectoryNode" />
@@ -290,12 +394,11 @@
           <select />
         </subPane>
       </pane>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542388363355" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1542389850423" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
@@ -333,16 +436,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1296" height="1000" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info id="Image Layers" />
-      <window_info id="Designer" />
-      <window_info id="Capture Tool" />
-      <window_info id="Favorites" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2540453" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Version Control" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Terminal" />
-      <window_info anchor="bottom" id="Event Log" side_tool="true" />
+      <window_info id="Image Layers" order="2" />
+      <window_info id="Designer" order="3" />
+      <window_info id="Capture Tool" order="4" />
+      <window_info id="Favorites" order="5" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -350,68 +451,44 @@
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="right" id="Theme Preview" />
-      <window_info anchor="right" id="Capture Analysis" />
-      <window_info anchor="right" id="Palette&#9;" />
-      <window_info anchor="right" id="Maven Projects" weight="0.32928804" />
+      <window_info anchor="bottom" id="Version Control" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Terminal" order="8" />
+      <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Capture Analysis" order="3" />
+      <window_info anchor="right" id="Theme Preview" order="4" />
+      <window_info anchor="right" id="Palette&#9;" order="5" />
+      <window_info anchor="right" id="Maven Projects" order="6" weight="0.32928804" />
     </layout>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/haha" />
+    <entry file="file://$PROJECT_DIR$/pom.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="187">
+          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="17" selection-start-line="17" selection-end-line="17" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/evkonyv-rest/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="31" selection-start-line="31" selection-end-line="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/EvkonyvServerApplication.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#273#274#0" expanded="true" />
-            <element signature="e#305#306#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="25" selection-start-line="6" selection-start-column="25" selection-end-line="6" selection-end-column="25" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/StudentController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="18" column="34" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#647#648#0" expanded="true" />
-            <element signature="e#683#684#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/StudentService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="16" selection-start-line="8" selection-start-column="16" selection-end-line="8" selection-end-column="16" />
-          <folding>
-            <element signature="e#182#183#0" expanded="true" />
-            <element signature="e#209#210#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="527">
+          <caret line="37" selection-start-line="37" selection-end-line="37" />
         </state>
       </provider>
     </entry>
@@ -422,32 +499,79 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/Student.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="289">
-          <caret line="17" selection-start-line="17" selection-end-line="17" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/haha">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="28" selection-start-line="11" selection-start-column="28" selection-end-line="11" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/evkonyv-share/src/main/java/eu/nemethbalint/evkonyv/evkonyvshare/util/SchoolClass.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="272">
           <caret line="16" column="31" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
           <folding>
             <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/EvkonyvServerApplication.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="8" column="62" selection-start-line="8" selection-start-column="62" selection-end-line="8" selection-end-column="62" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#342#343#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/StudentService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="16" column="20" selection-start-line="16" selection-start-column="20" selection-end-line="16" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#182#183#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#328#329#0" expanded="true" />
+            <element signature="e#354#355#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/service/SchoolClassService.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="15" column="20" selection-start-line="15" selection-start-column="20" selection-end-line="15" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#271#272#0" expanded="true" />
+            <element signature="e#298#299#0" expanded="true" />
+            <element signature="e#347#348#0" expanded="true" />
+            <element signature="e#366#367#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/StudentController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="34" lean-forward="true" selection-start-line="23" selection-start-column="34" selection-end-line="23" selection-end-column="34" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#647#648#0" expanded="true" />
+            <element signature="e#697#698#0" expanded="true" />
+            <element signature="e#826#827#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/evkonyv-rest/src/main/java/eu/nemethbalint/evkonyv/evkonyvrest/controller/SchoolClassController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="425">
+          <caret line="25" column="46" selection-start-line="25" selection-start-column="46" selection-end-line="25" selection-end-column="46" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#662#663#0" expanded="true" />
+            <element signature="e#706#707#0" expanded="true" />
+            <element signature="e#899#900#0" expanded="true" />
+            <element signature="e#942#943#0" expanded="true" />
           </folding>
         </state>
       </provider>
