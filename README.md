@@ -1,0 +1,2 @@
+# vizsgaevkonyv
+záródolgozat
