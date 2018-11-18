@@ -6,6 +6,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 import javax.persistence.*;
+import java.sql.Clob;
 import java.time.LocalDate;
 
 @Entity
@@ -25,6 +26,8 @@ public class DbStudent {
     private String lastName;
     @Column(name="szuletesidatum")
     private LocalDate birthDate;
+    @Column(name="tablokep")
+    private Clob picture;
 
 
 }

@@ -3,6 +3,7 @@ package eu.nemethbalint.evkonyv.evkonyvrest;
 
 import eu.nemethbalint.evkonyv.evkonyvrest.database.DbSchoolClass;
 import eu.nemethbalint.evkonyv.evkonyvrest.database.DbStudent;
+import eu.nemethbalint.evkonyv.evkonyvrest.helper.PictureConverter;
 import eu.nemethbalint.evkonyv.evkonyvrest.repository.DbSchoolClassRepository;
 import eu.nemethbalint.evkonyv.evkonyvrest.repository.DbStudentRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -21,8 +22,9 @@ public class EvkonyvServerApplication implements CommandLineRunner {
     private DbStudentRepository studentRepository;
     @Autowired
     private DbSchoolClassRepository schoolClassRepository;
-    public static void main(String... args){
-        SpringApplication.run(EvkonyvServerApplication.class,args);
+
+    public static void main(String... args) {
+        SpringApplication.run(EvkonyvServerApplication.class, args);
 
     }
 
@@ -30,15 +32,15 @@ public class EvkonyvServerApplication implements CommandLineRunner {
     public void run(String... args) throws Exception {
         List<DbStudent> list = new ArrayList<>();
         list.add(DbStudent.builder()
-        .firstName("Bálint")
-        .lastName("Németh")
-        .birthDate(LocalDate.of(1996,2,3))
-        .build());
+                .firstName("Bálint")
+                .lastName("Németh")
+                .birthDate(LocalDate.of(1996, 2, 3))
+                .build());
         list.add(DbStudent.builder()
-        .firstName("Mátyás")
-        .lastName("Tolnai")
-        .birthDate(LocalDate.of(1996,1,16)
-        ).build());
+                .firstName("Mátyás")
+                .lastName("Tolnai")
+                .birthDate(LocalDate.of(1996, 1, 16)
+                ).build());
         studentRepository.saveAll(list);
         schoolClassRepository.save(DbSchoolClass.builder()
                 .className("13.G")
@@ -46,12 +48,13 @@ public class EvkonyvServerApplication implements CommandLineRunner {
                 .graduation(true)
                 .schoolyear(2018)
                 .build());
-        list=new ArrayList<>();
+        list = new ArrayList<>();
         list.add(DbStudent.builder()
-        .firstName("Péter")
-        .lastName("Laki")
-        .birthDate(LocalDate.of(2000,7,1))
-        .build());
+                .firstName("Péter")
+                .lastName("Laki")
+                .birthDate(LocalDate.of(2000, 7, 1))
+                .picture(PictureConverter.stringToClob(PictureConverter.convertToString("Peti.png")))
+                .build());
         studentRepository.saveAll(list);
         schoolClassRepository.save(DbSchoolClass.builder()
                 .className("11.D")

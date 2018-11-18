@@ -6,4 +6,6 @@ import org.springframework.stereotype.Repository;
 
 @Repository
 public interface DbStudentRepository extends JpaRepository<DbStudent, Integer> {
+
+    DbStudent findOneByLastNameAndFirstName(String lastName, String firstName);
 }
