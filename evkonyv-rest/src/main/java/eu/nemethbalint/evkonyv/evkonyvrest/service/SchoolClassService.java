@@ -1,6 +1,8 @@
 package eu.nemethbalint.evkonyv.evkonyvrest.service;
 
-import eu.nemethbalint.evkonyv.evkonyvshare.util.SchoolClass;
+import eu.nemethbalint.evkonyv.evkonyvrest.database.DbSchoolClass;
+import eu.nemethbalint.evkonyv.evkonyvrest.repository.DbSchoolClassRepository;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,11 +10,13 @@ import java.util.List;
 @Service
 public class SchoolClassService {
 
+    @Autowired
+    private DbSchoolClassRepository schoolClassRepository;
 
-    public List<SchoolClass> getAll() {
-        return null;
+    public List<DbSchoolClass> getAll() {
+         return schoolClassRepository.findAll();
     }
-    public SchoolClass getOne(String className){
-        return null;
+    public DbSchoolClass getOne(String className){
+        return schoolClassRepository.findOneByClassName(className);
     }
 }

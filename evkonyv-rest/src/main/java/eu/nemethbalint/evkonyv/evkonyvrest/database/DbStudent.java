@@ -25,9 +25,6 @@ public class DbStudent {
     private String lastName;
     @Column(name="szuletesidatum")
     private LocalDate birthDate;
-    @ManyToOne
-    @JoinColumn(name="osztalyid")
-    private DbSchoolClass osztaly;
 
 
 }

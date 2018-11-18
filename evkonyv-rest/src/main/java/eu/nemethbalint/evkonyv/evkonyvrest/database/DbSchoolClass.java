@@ -20,7 +20,7 @@ public class DbSchoolClass {
     private int id;
     @Column(name="osztalynev")
     private String className;
-    @OneToMany(mappedBy = "osztaly")
+    @OneToMany
     private List<DbStudent> studentList;
     @Column(name="vegzososztaly")
     private boolean graduation;

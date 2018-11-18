@@ -41,7 +41,7 @@ public class EvkonyvServerApplication implements CommandLineRunner {
         ).build());
         studentRepository.saveAll(list);
         schoolClassRepository.save(DbSchoolClass.builder()
-                .className("13. G")
+                .className("13.G")
                 .studentList(list)
                 .graduation(true)
                 .schoolyear(2018)
@@ -54,7 +54,7 @@ public class EvkonyvServerApplication implements CommandLineRunner {
         .build());
         studentRepository.saveAll(list);
         schoolClassRepository.save(DbSchoolClass.builder()
-                .className("11. D")
+                .className("11.D")
                 .studentList(list)
                 .graduation(false)
                 .schoolyear(2018)
